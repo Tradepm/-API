@@ -1,0 +1,6 @@
+log/
+*.pkl
+*.env
+*.ppt
+*.pptx
+*.pdf
