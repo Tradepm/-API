@@ -16,14 +16,17 @@
   超過12點也盡可能安靜🤫
   除非特殊行情
 * 社群連結: https://reurl.cc/OMWqDX
+* ![image](https://github.com/Tradepm/-API/blob/main/line_qrcode.png)
 
 ## 富邦Neo程式交易社群(與富果合作)
 * 在這邊有更專精資訊技術的開發者為大家細心解答相關技術問題或幫抓bug
 * 社群連結: https://discord.com/invite/VHjjc4C
+* ![image](https://github.com/Tradepm/-API/blob/main/discord_qrcode.png)
 
 ## 富邦程式交易YT播放清單
 * 過往線上講座包含新一代API & XQ的影片都在這
 * 講座過後約2週會更新上線，歡迎自由複習、按讚、訂閱、開啟小鈴鐺
 * 清單連結: https://reurl.cc/aqDWZQ
+* ![image](https://github.com/Tradepm/-API/blob/main/yt_list_qrcode.png)
 
 
