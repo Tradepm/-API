@@ -27,5 +27,7 @@
 * 講座過後約2週會更新上線，歡迎自由複習、按讚、訂閱、開啟小鈴鐺
 * 清單連結: https://reurl.cc/aqDWZQ<br>
   ![image](https://github.com/Tradepm/-API/blob/main/yt_list_qrcode.png)
+* Python API基礎設置可參考以下影片
+  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/XQo8d4-WsIg/0.jpg)](https://www.youtube.com/watch?v=XQo8d4-WsIg)
 
 
