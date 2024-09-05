@@ -1,5 +1,5 @@
 # 富邦新一代 API 教學範例集散地
-大家好，所有範例都歡迎自行取用<br>
+大家好，所有範例都歡迎自行取用，可配合[官方文件](https://www.fbs.com.tw/TradeAPI/docs/trading/introduction)參考使用及延伸開發<br>
 對於範例有任何問題，或想更進一步了解新一代API，或想找人討論程式交易<br>
 **歡迎加入以下社群**
 ## 新一代API與XQ的實驗室
