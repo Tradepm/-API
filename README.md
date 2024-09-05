@@ -10,10 +10,9 @@
   4. 不要吵架、謾罵
   5. 不要po跟程式交易無關的東西
   6. 不討論系統資訊相關問題
-
-  假日也儘量不要po東西
-  超過12點也盡可能安靜🤫
-  除非特殊行情
+  7. 假日也儘量不要po東西<br>
+   超過12點也盡可能安靜🤫<br>
+   除非特殊行情<br>
 * 社群連結: https://reurl.cc/OMWqDX<br>
   ![image](https://github.com/Tradepm/-API/blob/main/line_qrcode.png)
 
