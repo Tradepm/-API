@@ -15,7 +15,10 @@
   ![image](https://github.com/Tradepm/-API/blob/main/line_qrcode.png)
 
 ## 富邦Neo程式交易社群(與富果合作)
-* 在這邊有更專精資訊技術的開發者為大家細心解答相關技術問題或幫抓bug
+
+* 在這邊有更專精資訊技術的開發者為大家細心解答相關技術問題或幫抓bug<br>
+  加入時，如下圖請記得勾選"富邦證期Neo"頻道<br>
+  ![image](https://github.com/Tradepm/-API/blob/main/fubon_channel.png)
 * 社群連結: https://discord.com/invite/VHjjc4C<br>
   ![image](https://github.com/Tradepm/-API/blob/main/discord_qrcode.png)
 
