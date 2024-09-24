@@ -1,7 +1,11 @@
 __pycache__/
 log/
+dist/
+build/
 *.pkl
 *.env
 *.ppt
 *.pptx
 *.pdf
+*.json
+*.csv
