@@ -47,9 +47,9 @@ https://www.fbs.com.tw/TradeAPI/docs/trading/introduction
 ## Pyinstaller 編譯執行檔設定
 【pyinstaller 步驟教學】
 建議如有想要自行編譯執行檔，使用的又是anaconda的話，按以下步驟嘗試
-1. 使用conda先創建一個python 3.11的虛擬環境(envName)可代換為你想要的任何名稱
+1. 使用conda先創建一個python 3.8~3.12的虛擬環境(envName)可代換為你想要的任何名稱
 ```
-conda create --name [envName] python=3.11
+conda create --name [envName] python=3.12
 ```
 2. 啟動該環境
 ```
