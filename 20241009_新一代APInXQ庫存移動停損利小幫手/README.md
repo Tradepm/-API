@@ -1,19 +1,20 @@
-# Python 自選股搶漲停小幫手(GUI應用)
+# Python 庫存移動停損利小幫手(GUI應用)
 
 ---
 > ## **Disclaimer: 範例程式碼及執行檔僅供教學與參考之用，實務交易應自行評估並承擔相關風險**
 > 
 ---
 
-本程式碼為富邦新一代API & XQ化學反應(1-2)線上講座範例，示範如何應用新一代API搭配XQ選股做自選股搶漲停<br> 
+本程式碼為富邦新一代API & XQ化學反應(2-2)線上講座範例，示範如何應用新一代API搭配雲端條件單做庫存的移動停損利<br> 
 功能涵蓋如下:
 * py_exe<br>
-  本資料夾底下涵蓋編譯好的教學範例執行檔和執行需要的資源，可以直接開啟**Python自選股搶漲停(教學範例，僅限現股).exe**做使用
-* rlu_with_selection.py<br>
+  本資料夾底下涵蓋編譯好的教學範例執行檔和執行需要的資源，可以直接開啟**Python庫存移動停損利小幫手(教學範例，僅限現股).exe**做使用
+* trail_stop_with_cloud.py<br>
   **本檔案為主要程式也是執行檔原碼**，GUI套件使用Pyside6，SDK版本為2.0.1，Python版本可為3.8~3.12，有任何需求都可以從這邊做修正，直接執行本程式碼即可看到GUI畫面
-  * 目前配置僅支援現股，有其他需要需自行更改
-  * 盤前即可接入WebSocket即時報價，可以從第一個成交tick開始監控
-* rlu_with_selection.spec<br>
+  * 目前配置僅支援現股買進的移動停損利設置，有其他需要請自行修改
+  * 預設只需輸入當下移停%數即會發送對應條件單
+  * 執行日期區間請以條件單查詢結果為準
+* trail_stop_with_cloud.spec<br>
   pyinstaller編譯執行檔用的描述檔，如想編出與範例一致的執行檔，請使用本描述檔操作
 * login_gui_v1.py<br>
   * Fubon SDK 2.0.1 已可支援預設憑證密碼登入，於憑證密碼欄位處留白即可
@@ -28,7 +29,7 @@ https://www.fbs.com.tw/TradeAPI/docs/smart-condition/introduction/
 https://www.fbs.com.tw/TradeAPI/docs/trading/introduction 
 * 新一代API & XQ社群討論<br>
   * Line: https://reurl.cc/dnMxlV
-  * Discord: https://discord.com/invite/VHjjc4C
+  * Discord: https://discord.com/invite/M8Gv9yKfza
 
 ## 登入設定
 在程式登入畫面中請使用以下設定
@@ -39,9 +40,9 @@ https://www.fbs.com.tw/TradeAPI/docs/trading/introduction
 > 交易帳號 = #不須分公司代碼之交易帳號(ex. 9801234)<br>
 
 ## 主程式設定
-* Step 1. 先選取選股完標的清單路徑
-* Step 2. 讀取清單，確認欲搶漲停之標的無誤
-* Step 3. 設定資金控制參數，並點擊"開始下單"
+* Step 1. 移停(%)欄位直接輸入預計使用的%數
+* Step 2. 輸入無誤，勾選後即會自動送出對應條件單
+* Step 3. 確認相關基準價、觸發價、設定股數是否與預期一致
 
 ## Pyinstaller 編譯執行檔設定
 【pyinstaller 步驟教學】
