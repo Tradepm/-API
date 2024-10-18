@@ -525,10 +525,12 @@ class MainApp(QWidget):
             self.communicator.print_log_signal('請輸入正確檔案路徑')
         else:
             try:
-                self.buy_target = pd.read_csv(target_path)
+                self.buy_target = pd.read_csv(target_path, skiprows=3)
             except UnicodeDecodeError as e:
                 print("uff-8 fail, try cp950...", e)
                 self.buy_target = pd.read_csv(target_path, encoding='cp950', skiprows=3)
+            self.buy_target = self.buy_target.iloc[:, :3]
+            self.buy_target = self.buy_target.dropna()  
             # print(self.buy_target)
 
             cur_target_symbols = list(self.buy_target.iloc[:, 1].str.replace('.TW', ''))
@@ -540,7 +542,10 @@ class MainApp(QWidget):
             for symbol in new_target_symbols:
                 ticker_res = self.reststock.intraday.ticker(symbol=symbol)
                 # self.print_log(ticker_res['name'])
-                self.last_close_dict[symbol] = ticker_res['referencePrice']
+                try:
+                    self.last_close_dict[symbol] = ticker_res['referencePrice']
+                except Exception as e:
+                    print(f"{symbol}...error, exception:{e}")
 
                 row = self.tablewidget.rowCount()
                 self.tablewidget.insertRow(row)
