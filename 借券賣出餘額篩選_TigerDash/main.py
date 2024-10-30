@@ -51,7 +51,10 @@ if 'initialized' not in st.session_state:
 
         # Login
         LOGGER.info("登入帳號 ...")
-        response = SDK.login(id, trade_password, cert_filepath, cert_password)
+        if cert_password:
+            response = SDK.login(id, trade_password, cert_filepath, cert_password)
+        else:
+            response = SDK.login(id, trade_password, cert_filepath)
 
         if response.is_success:
             LOGGER.info("登入成功!")
