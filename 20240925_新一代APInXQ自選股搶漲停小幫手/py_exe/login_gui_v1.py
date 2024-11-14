@@ -127,14 +127,15 @@ class LoginForm(QWidget):
                     self.close()
 
                 elif target_account[0] == '0':
-                    if cur_account.account == target_account[1:]:
+                    if cur_account.account == str(int(target_account)):
+                        print(str(int(target_account)))
                         self.active_account = cur_account
                         with open('info.pkl', 'wb') as f:
                             pickle.dump(user_info_dict, f)
 
-                    self.main_app = self.main_app_object(self.sdk, self.active_account)
-                    self.main_app.show()
-                    self.close()
+                        self.main_app = self.main_app_object(self.sdk, self.active_account)
+                        self.main_app.show()
+                        self.close()
                     
             if self.active_account == None:
                 self.sdk.logout()
@@ -147,7 +148,7 @@ class LoginForm(QWidget):
             msg.exec()
 
 class MainApp(QWidget):
-    def __init__(self, active_account):
+    def __init__(self, sdk, active_account):
         super().__init__()
 
         self.active_account = active_account
