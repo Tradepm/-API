@@ -8,5 +8,4 @@ build/
 *.pptx
 *.pdf
 *.json
-*.csv
 .env
