@@ -6,11 +6,11 @@
 ---
 
 本程式碼為基本市況報導網站提供之借券賣出餘額資訊配合新一代API，示範如何結合兩者並應用StreamLit做出市場資訊即時觀察小應用<br> 
-使用方法如下:
-Step 1. 依據.env-template新增.env檔案
-Step 2. 依據requirements.txt安裝所需python package
-Step 3. 執行run.py，若出現需輸入email的prompt直接enter跳過即可
-Step 4. 若執行無誤，此時瀏覽器應會自動開啟面板
+使用方法如下:<br>
+Step 1. 依據.env-template新增.env檔案<br>
+Step 2. 依據requirements.txt安裝所需python package<br>
+Step 3. 執行run.py，若出現需輸入email的prompt直接enter跳過即可<br>
+Step 4. 若執行無誤，此時瀏覽器應會自動開啟面板<br>
      
 ## 參考連結
 富邦新一代API Python SDK載點及開發說明文件
