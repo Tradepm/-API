@@ -269,6 +269,7 @@ class MainApp(QWidget):
             self.tablewidget.item(self.row_idx_map[symbol], self.col_idx_map['漲幅(%)']).setForeground(QColor(Qt.black))
 
     def update_filled_qty_item(self, symbol, filled_qty):
+        
         self.tablewidget.item(self.row_idx_map[symbol], self.col_idx_map['成交數量']).setText(str(filled_qty))
 
     def update_order_qty_item(self, symbol, order_qty):
